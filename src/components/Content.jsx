@@ -34,7 +34,6 @@ export default function Content() {
         },
         { image: "https://i.ytimg.com/vi/eZS7AKfVKls/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCKyBbpzrkmc-3MV4x9ODb8tngK1Q",
             title:"Como instalar Linux",
-            channel: "midulive 4",
         },
     ];
 
