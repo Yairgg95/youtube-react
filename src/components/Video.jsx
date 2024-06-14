@@ -19,21 +19,21 @@ export default function Video({ image, title, channel }) {
 
 
     return (
-    <article className={clsx('video-card otra', { 
+    <article className={clsx('flex flex-col gap-2', { 
         // special: channel === 'midulive 1', 
-        'special red': channel === 'midulive 1',
+        'border border-red-500': channel === 'midulive 1',
         })}>
-        <img src={image} alt="" />
-        <footer>
+        <img className="w-full rounded-[10px] object-cover" src={image} alt="" />
+        <footer className="grid gap-2 grid-cols[2rem_1fr]">
             {
-                channel && (<img src={`https://api.dicebear.com/8.x/notionists/svg?seed=${channel}`} alt="" />)
+                channel && (<img className="col-start-1 col-end-2 w-8 h-8 rounded-full" src={`https://api.dicebear.com/8.x/notionists/svg?seed=${channel}`} alt="" />)
             }
             {
                 !channel && (<span>🤷🏽‍♂️</span>)
             }
             {/* {channel ? (<img src={`https://api.dicebear.com/8.x/notionists/svg?seed=${channel}`} alt="" />) : (<span>🤷🏽‍♂️</span>)} */}
-            <p className="video-card-title">{title}</p>
-            <p className="video-card-channel">{channel || "UNKNOWN"}</p>
+            <p className="col-start-2 col-end-3">{title}</p>
+            <p className="col-start-2 col-end-3">{channel || "UNKNOWN"}</p>
         </footer>
     </article>
     );

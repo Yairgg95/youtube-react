@@ -8,11 +8,11 @@ export default function Categories() {
         "Life Style",
         "Sports",
     ]
-    return (<div id="categories-list">
+    return (<div className="flex gap-4">
         {
             categories.map((category) => {
                 return (
-                    <span key={`category-${category}`} className="category">
+                    <span key={`category-${category}`} className="py-2 px-4 rounded-[20px] bg-[#282828]">
                         {category}
                         </span>
                 )

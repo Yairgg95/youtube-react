@@ -6,11 +6,11 @@ export default function Navbar() {
                 <YouTubeLogo height="1.8rem" width="3rem"/>
                 <span>Youtube</span>
             </div>
-            <div id="search-container">
-                <input type="text" placeholder="Search" />
+            <div id="flex justify-center intems-center ">
+                <input className="w-full py-2 px-4 border border[#282828] rounded[1rem] bg-transparent" type="text" placeholder="Search" />
             </div>
-            <div id="user-icon">
-                <img src="https://api.dicebear.com/8.x/notionists/svg?seed=Yair" alt="user" />
+            <div className="flex justify-end">
+                <img className="w-8 h-8 rounded-full" src="https://api.dicebear.com/8.x/notionists/svg?seed=Yair" alt="user" />
             </div>
         </nav>
     )
